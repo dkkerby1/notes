@@ -21,3 +21,26 @@ Fix:
 cd into the correct folder
 or
 git init
+
+## Stuck in Git editor (Vim)
+
+Problem:
+After running git commit or git revert, a strange screen opens and you can’t exit.
+
+Cause:
+Git opened Vim (default terminal editor).
+
+Fix (save and exit):
+Press Esc
+Type :wq
+Press Enter
+
+Fix (exit without saving):
+Press Esc
+Type :q!
+Press Enter
+
+Prevention (use a normal editor):
+git config --global core.editor "notepad"
+OR
+git config --global core.editor "code --wait"
