@@ -44,3 +44,26 @@ Prevention (use a normal editor):
 git config --global core.editor "notepad"
 OR
 git config --global core.editor "code --wait"
+
+---
+
+## Editing the Wrong File or Directory
+
+Problem:
+A file was edited or created, but it showed up in the wrong project.
+
+Cause:
+You were in the wrong directory when running the command.
+
+How to check before editing:
+pwd     # shows current directory
+ls      # shows files in current directory
+
+Fix:
+1. cd to the correct directory
+2. Re-run the edit command
+
+Lesson:
+The terminal always acts on the CURRENT directory.
+
+
